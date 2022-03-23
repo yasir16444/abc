@@ -4,20 +4,18 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings
 from typing import List
 
-numbers = [1,36,6,9,36,100,9,10,10]
-unique = []
-for x in numbers:
-    if x not in unique:
-        unique.append(x)
-print(unique)
-
-
-
-
-
-
-
-
+scret = 9
+guess_count = 0
+guess_limit = 3
+while   guess_count < guess_limit:
+    Guess = int(input('what is the guess:'))
+    guess_count += 1
+    if Guess == scret:
+        print("you won")
+        break
+    print("make another guess")
+else:
+    print("you lose")
 
 
 
